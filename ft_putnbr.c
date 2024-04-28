@@ -6,7 +6,7 @@
 /*   By: marojas- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/31 17:55:23 by marojas-          #+#    #+#             */
-/*   Updated: 2024/04/28 13:21:11 by marojas-         ###   ########.fr       */
+/*   Updated: 2024/04/28 15:09:59 by marojas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,6 @@
 
 void	ft_putnbr(int n, int *count)
 {
-	int	control;
-
-	control = 0;
 	if (n == -2147483648)
 	{
 		write(1, "-2147483648", 11);
@@ -29,7 +26,7 @@ void	ft_putnbr(int n, int *count)
 		{
 			n *= -1;
 			*count += 1;
-			control = write(1, "-", 1);
+			write(1, "-", 1);
 		}
 		if (n > 9)
 		{
