@@ -36,11 +36,9 @@ int	ft_printf(char const *str, ...)
 {
 	va_list	arguments;
 	int		i;
-	int		control;
 	int		count;
 
 	i = 0;
-	control = 0;
 	count = 0;
 	if (!str)
 		return (0);
@@ -62,14 +60,8 @@ int	ft_printf(char const *str, ...)
 /*
 int	main(void)
 {
-	unsigned int	i;
-	void *ptr;
-
-	i = 4294967295;
-	ptr = &i;
-
-	printf("%");
-	ft_printf("%");
+	printf("%p\n", (void *)0);
+	ft_printf("%p\n", (void *)0);
 	return (0);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: marojas- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/31 17:01:35 by marojas-          #+#    #+#             */
-/*   Updated: 2024/04/28 15:11:04 by marojas-         ###   ########.fr       */
+/*   Updated: 2024/04/14 20:19:15 by marojas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr(char *str, int *count)
 	int	i;
 
 	if (!str)
-		str = "(null)";
+		str = "(nil)";
 	i = 0;
 	while (str[i] != '\0')
 	{
