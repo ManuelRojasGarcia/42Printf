@@ -17,7 +17,7 @@ void	ft_putstr(char *str, int *count)
 	int	i;
 
 	if (!str)
-		str = "(nil)";
+		str = "(null)";
 	i = 0;
 	while (str[i] != '\0')
 	{

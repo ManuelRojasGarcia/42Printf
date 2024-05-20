@@ -60,8 +60,9 @@ int	ft_printf(char const *str, ...)
 /*
 int	main(void)
 {
-	printf("%p\n", (void *)0);
-	ft_printf("%p\n", (void *)0);
+	int i = printf("%s\n", (char *)NULL);
+	int u = ft_printf("%s\n", (char *)NULL);
+	printf("%i\n", i - u);
 	return (0);
 }
 */
